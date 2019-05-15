@@ -4,7 +4,7 @@ return array(
 	// specify multiple server groups (however they should share the same login
 	// server whilst they are allowed to have multiple char/map pairs).
 	array(
-		'ServerName'     => 'FluxRO',
+		'ServerName'     => 'GlassRO',
 		// Global database configuration (excludes logs database configuration).
 		'DbConfig'       => array(
 			//'Socket'     => '/tmp/mysql.sock',
@@ -37,7 +37,7 @@ return array(
 			'Hostname'   => '127.0.0.1',
 			'Username'   => 'ragnarok',
 			'Password'   => 'ragnarok',
-			'Database'   => 'ragnarok',
+			'Database'   => 'log',
 			'Persistent' => true,
 			'Timezone'   => null // Possible values is as described in the comment in DbConfig.
 		),
@@ -52,7 +52,7 @@ return array(
 		),
 		'CharMapServers' => array(
 			array(
-				'ServerName'      => 'FluxRO',
+				'ServerName'      => 'GlassRO',
 				'Renewal'         => true,
 				'MaxCharSlots'    => 9,
 				'DateTimezone'    => null, // Specifies game server's timezone for this char/map pair. (See: http://php.net/timezones)
@@ -65,19 +65,19 @@ return array(
 				),
 				'DropRates' => array(
 					// The rate the common items (in the ETC tab, besides card) are dropped
-					'Common'      => 100,
+					'Common'      => 1000,
 					'CommonBoss'  => 100,
 					// The rate healing items (that restore HP or SP) are dropped
-					'Heal'        => 100,
+					'Heal'        => 1000,
 					'HealBoss'    => 100,
 					// The rate usable items (in the item tab other then healing items) are dropped
-					'Useable'     => 100,
+					'Useable'     => 1000,
 					'UseableBoss' => 100,
 					// The rate at which equipment is dropped
-					'Equip'       => 100,
+					'Equip'       => 1000,
 					'EquipBoss'   => 100,
 					// The rate at which cards are dropped
-					'Card'        => 100,
+					'Card'        => 1000,
 					'CardBoss'    => 100,
 					// The rate adjustment for the MVP items that the MVP gets directly in their inventory
 					'MvpItem'     => 100
